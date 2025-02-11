@@ -79,7 +79,6 @@ export default function Home() {
     lon: number;
   }
 
-
   const { isLoading, error, data } = useQuery<WeatherResponse>({
     queryKey: ['repoData'],
     queryFn: async () => {
